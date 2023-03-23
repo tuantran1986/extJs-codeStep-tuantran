@@ -18,6 +18,8 @@ Ext.define('MyApp.view.main.Main', {
         'MyApp.view.main.List'
     ],
 
+    // 3. LUỒNG: APP - VIEW MAIN - MODEL MAIN
+    // 3. KHAI BÁO - MODEL + CONTROLLER: không cần TIỀN TỐ 'viewmodel.main' ==> 'main'
     controller: 'main',
     viewModel: 'main',
 
@@ -92,12 +94,15 @@ Ext.define('MyApp.view.main.Main', {
         title: 'Users',
         iconCls: 'fa-user',
         // 2. hiển thị nội dung = XTYPE
-        xtype: 'Extra',
-        // bind: {
-        //     // 1.EXTRA - không ăn code HTML
-        //     html: '{Extra}'
-        //     // html: '{loremIpsum}'
-        // }
+        // xtype: 'Extra',
+
+        // 4. LUỒNG: APP - VIEW MAIN - MODEL MAIN
+        // lấy VALUE của BIẾN trong MODEL ra dùng = toán tử {}
+        bind: {
+            html: '{loremIpsum}'
+            // 1.EXTRA - không ăn code HTML
+            // html: '{Extra}'
+        }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',

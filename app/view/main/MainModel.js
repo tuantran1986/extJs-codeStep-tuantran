@@ -4,8 +4,12 @@
 Ext.define('MyApp.view.main.MainModel', {
     extend: 'Ext.app.ViewModel',
 
+    // 2.1. LUỒNG: APP - VIEW MAIN - MODEL MAIN : khai báo "tên MODEL"
+    // alias = XTYPE = EXPORT: xuất ra tên 'viewmodel.main' = CYDB = KHÔNG PHẢI "main"
+    // CYDB - khi ALIAS: "viewmodel.main" có TIỀN TỐ "viewmodel." = "ĐỂ ĐÁNH DẤU = MODEL"
     alias: 'viewmodel.main',
 
+    // 2.2. khai báo "biến"
     data: {
         // CYDB 1 - VIEW lấy dữ liệu từ MAINMODEL thông qua BIND
         name: 'TUANTRAN-MyApp',
