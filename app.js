@@ -13,6 +13,9 @@ Ext.application({
         'MyApp.*'
     ],
 
-    // The name of the initial view to create.
-    mainView: 'MyApp.view.main.Main'
+    // CYDB - MAINVIEW = "view chính"
+    // The name of the initial view to create = MAINVIEW
+    mainView: 'MyApp.view.main.Extra'
+        // mainView: 'MyApp.view.main.Main',
+    
 });
