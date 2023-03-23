@@ -18,7 +18,8 @@ Ext.define('MyApp.view.main.Extra', {
             iconCls: 'fa-user',
             // 5. SỬ DỤNG - VALUE của BIẾN "loremIpsum" - trong MODEL (main)
             bind: {
-                html: '{loremIpsum}'
+                html: '{name}'
+                // html: '{loremIpsum}'
             }
         }
     ]
