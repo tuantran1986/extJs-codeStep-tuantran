@@ -87,8 +87,8 @@ Ext.define('MyApp.view.main.Main', {
         // TAP - HOME: có "XTYPE = ALIAS = EXPORT từ: MAINLIST"
         items: [{
             // SỬA NỘI DUNG = XTYPE = 'EXTRA'
-            xtype: 'Extra'
-            // xtype: 'mainlist'
+            // xtype: 'Extra'
+            xtype: 'mainlist'
         }]
     }, {
         title: 'Users',
