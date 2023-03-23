@@ -76,12 +76,17 @@ Ext.define('MyApp.view.main.Main', {
         }
     },
 
+    // ITEMS = content nội dung :
     items: [{
+        // 1.TAB - HOME
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
+        // TAP - HOME: có "XTYPE = ALIAS = EXPORT từ: MAINLIST"
         items: [{
-            xtype: 'mainlist'
+            // SỬA NỘI DUNG = XTYPE = 'EXTRA'
+            xtype: 'Extra'
+            // xtype: 'mainlist'
         }]
     }, {
         title: 'Users',

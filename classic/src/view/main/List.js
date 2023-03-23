@@ -3,6 +3,7 @@
  */
 Ext.define('MyApp.view.main.List', {
     extend: 'Ext.grid.Panel',
+    // XTYPE = ALIAS = EXPORT:  "XTYPE = MAINLIST"
     xtype: 'mainlist',
 
     requires: [
