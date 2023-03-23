@@ -91,9 +91,13 @@ Ext.define('MyApp.view.main.Main', {
     }, {
         title: 'Users',
         iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        // 2. hiển thị nội dung = XTYPE
+        xtype: 'Extra',
+        // bind: {
+        //     // 1.EXTRA - không ăn code HTML
+        //     html: '{Extra}'
+        //     // html: '{loremIpsum}'
+        // }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
