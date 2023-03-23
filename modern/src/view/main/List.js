@@ -32,6 +32,7 @@ Ext.define('MyApp.view.main.List', {
         width: 150 
     }],
 
+    // CYDB 3 - LẮNG NGHE SỰ KIỆN "SELECT" - gọi HANDLE trong CONTROLLER "MAIN"
     listeners: {
         select: 'onItemSelected'
     }

@@ -32,6 +32,8 @@ Ext.define('MyApp.view.main.Main', {
             align: 'stretchmax'
         },
         title: {
+            // CYDB 1 - BIND - để lấy dữ liệu từ - MAINMODEL, thông qua {}
+            // ngoặc nhọn {} - là để LẤY GIÁ TRỊ BIẾN
             bind: {
                 text: '{name}'
             },

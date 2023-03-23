@@ -7,6 +7,7 @@ Ext.define('MyApp.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
+        // CYDB 1 - VIEW lấy dữ liệu từ MAINMODEL thông qua BIND
         name: 'TUANTRAN-MyApp',
         // name: 'MyApp',
 

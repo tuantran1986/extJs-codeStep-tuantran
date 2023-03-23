@@ -7,13 +7,18 @@ Ext.define('MyApp.view.main.MainController', {
 
     alias: 'controller.main',
 
+    // CONTROLLER - khai báo METHOD
     onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+                                                            // CYDB 2 - SU DUNG - method
+        Ext.Msg.confirm('Confirm', 'Are you sure TUANTRAN?', 'onConfirm', this);
     },
 
+    // CYDB 3 - khai báo method HANDLE trong CONTROLLER "MAIN"
+    // CYDB 2 - khai báo - method
     onConfirm: function (choice) {
         if (choice === 'yes') {
             //
+            alert('OK - CONFIRM')
         }
     }
 });
