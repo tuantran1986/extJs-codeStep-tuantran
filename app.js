@@ -22,5 +22,5 @@ Ext.application({
     
 
     // BẬT - tính năng tự động TẠO-VIEWPORT
-    autoCreateViewport: true
+    // autoCreateViewport: true
 });
