@@ -13,14 +13,14 @@ Ext.application({
         'MyApp.*'
     ],
 
-    // HÀM 
-    // launch: function() {
-    //     // lấy VIEWPORT - CYDB quy tắc "BỎ TIỀN TỐ" = "GIẢN LƯỢC TÊN" = 'MyApp.view.Viewport' ==> 'viewport'
-    //     viewport = Ext.getCmp('viewport');
-    //     target = viewport.down('#viewport-target');
-    //     view = Ext.create('MyApp.view.main.Main');
-    //     target.add(view);
-    // },
+    // HÀM - CHẠY
+    launch: function() {
+        // lấy VIEWPORT - CYDB quy tắc "BỎ TIỀN TỐ" = "GIẢN LƯỢC TÊN" = 'MyApp.view.Viewport' ==> 'viewport'
+        viewport = Ext.getCmp('viewport');
+        target = viewport.down('#viewport-target');
+        view = Ext.create('MyApp.view.main.Main');
+        target.add(view);
+    },
 
     // 1.CYDB - MAINVIEW = "view chính"
     // The name of the initial view to create = MAINVIEW
@@ -31,5 +31,5 @@ Ext.application({
     
 
     // BẬT - tính năng tự động TẠO-VIEWPORT
-    // autoCreateViewport: true
+    autoCreateViewport: true
 });
