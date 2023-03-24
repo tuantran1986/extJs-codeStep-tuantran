@@ -5,6 +5,7 @@ Ext.define('MyApp.store.ExtraGrid', {
     // CYDB - EXPORT = xuất ra "ĐỦ TIỀN TỐ = store."
     alias: 'store.extraGrid',   // ALIAS = XTYPE = EXPORT = xuất ra "ĐỦ TIỀN TỐ = store."
 
+    // CYDB - MODEL kết nối + quản lý STORE
     // khai báo: SỬ DỤNG MODEL = "MyApp.model.ExtraGrid" ==> VALIDATE CÁC TRƯỜNG DỮ LIỆU TRONG STORE
     model: 'MyApp.model.ExtraGrid',     // CYDB: "tên MODEL" = "TÊN ĐỊA CHỈ CỤ THỂ"
 
