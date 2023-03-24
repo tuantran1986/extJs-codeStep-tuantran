@@ -8,12 +8,19 @@ Ext.define('MyApp.view.main.ExtraGrid', {
     width: 400,
     // DỮ LIỆU - BẢNG
     store: [
-
+        { name: 'Jean Luc', email: "jeanluc.picard@enterprise.com", phone: "555-111-1111" },
+        { name: 'Worf',     email: "worf.moghsson@enterprise.com",  phone: "555-222-2222" },
+        { name: 'Deanna',   email: "deanna.troi@enterprise.com",    phone: "555-333-3333" },
+        { name: 'tuantran',   email: "tuantran@enterprise.com",    phone: "666-333-3333" },
+        { nameMiss: 'Data',     email: "mr.data@enterprise.com",        phone: "555-444-4444" }
     ],
-    // CẤU HÌNH CỘT: "TEXT = TÊN CỘT" ; "DATAINDEX = TÊN BIẾN CỦA CỘT"
+    // CẤU HÌNH CỘT: "TEXT = TÊN CỘT" ; "DATAINDEX = TÊN BIẾN CỦA CỘT" ; "FLEX = CHIA ĐỘ RỘNG CỘT"
+        // "flex: 1" ==> chia cột 1/6.
+        // "flex: 3" ==> chia cột 3/6.
+        // "flex: 2" ==> chia cột 2/6.
     columns: [
-        {text: 'Name', dataIndex:'name'},
-        {text: 'Email', dataIndex:'email'},
-        {text: 'Phone', dataIndex:'phone'},
+        {text: 'Name', dataIndex:'name', flex: 1},
+        {text: 'Email', dataIndex:'email', flex: 3},
+        {text: 'Phone', dataIndex:'phone', flex: 2},
     ]
 })
