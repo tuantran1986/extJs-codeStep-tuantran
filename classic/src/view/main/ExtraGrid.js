@@ -31,12 +31,26 @@ Ext.define('MyApp.view.main.ExtraGrid', {
         {text: 'Phone', dataIndex:'phone', flex: 2},
     ],
     
-    // ID
-    id: 'extraGridID',
+    // ID = duy nhất
+    id: 'Extra_Grid_ID',
     selModel: {
         injectCheckbox: 'first',
         checkOnly: true,
         model: 'SIMPLE',
         type: 'checkboxmodel'
-    }
+    },
+
+    // MẢNG CÁC NÚT - TRÊN GIAO DIỆN:
+    buttons: [
+        // NÚT 1: SELECT ALL = "CHỌN TẤT CẢ"
+        {
+            text: 'SELECT ALL',
+            handler: function(){
+                // lấy ELEMENT = "ID" : Ext.getCmp('ID') = Ext.getCmp('Extra_Grid_ID')
+                    // getSelectionModel()  : chế độ CHỌN
+                    // selectAll()          : chọn "TẤT CẢ"
+                Ext.getCmp('Extra_Grid_ID').getSelectionModel().selectAll();
+            }
+        }
+    ]
 })
