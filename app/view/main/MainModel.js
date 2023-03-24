@@ -6,7 +6,7 @@ Ext.define('MyApp.view.main.MainModel', {
 
     // 2. LUỒNG: APP - VIEW MAIN - MODEL MAIN : khai báo "tên MODEL"
     // alias = XTYPE = EXPORT: xuất ra tên 'viewmodel.main' = CYDB = KHÔNG PHẢI "main"
-    // CYDB - khi ALIAS: "viewmodel.main" có TIỀN TỐ "viewmodel." = "ĐỂ ĐÁNH DẤU = MODEL"
+    // CYDB - khi ALIAS: "viewmodel.main" [có TIỀN TỐ "viewmodel."] = "ĐỂ ĐÁNH DẤU = MODEL"
     alias: 'viewmodel.main',
 
     // 3. khai báo "biến"

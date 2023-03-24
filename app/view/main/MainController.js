@@ -5,7 +5,7 @@
 Ext.define('MyApp.view.main.MainController', {
     extend: 'Ext.app.ViewController',
 
-    // CYDB - khi ALIAS: "controller.main" có TIỀN TỐ "controller." = "ĐỂ ĐÁNH DẤU = CONTROLLER"
+    // CYDB - khi ALIAS: "controller.main" [có TIỀN TỐ "controller."] = "ĐỂ ĐÁNH DẤU = CONTROLLER"
     alias: 'controller.main',
 
     // CONTROLLER - khai báo METHOD
