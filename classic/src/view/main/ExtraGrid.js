@@ -42,14 +42,35 @@ Ext.define('MyApp.view.main.ExtraGrid', {
 
     // MẢNG CÁC NÚT - TRÊN GIAO DIỆN:
     buttons: [
-        // NÚT 1: SELECT ALL = "CHỌN TẤT CẢ"
+        // NÚT 1 : SELECT ALL = "CHỌN TẤT CẢ"
         {
             text: 'SELECT ALL',
             handler: function(){
                 // lấy ELEMENT = "ID" : Ext.getCmp('ID') = Ext.getCmp('Extra_Grid_ID')
-                    // getSelectionModel()  : chế độ CHỌN
+                // getSelectionModel()  : chế độ CHỌN
                     // selectAll()          : chọn "TẤT CẢ"
                 Ext.getCmp('Extra_Grid_ID').getSelectionModel().selectAll();
+            }
+        },
+        // NÚT 2 : REMOVE ALL = DESELECT ALL = "BỎ CHỌN TẤT CẢ"
+        {
+            text: 'REMOVE ALL',
+            handler: function(){
+                // lấy ELEMENT = "ID" : Ext.getCmp('ID') = Ext.getCmp('Extra_Grid_ID')
+                // getSelectionModel()  : chế độ CHỌN
+                    // deselectAll()        : BỎ chọn "TẤT CẢ"
+                Ext.getCmp('Extra_Grid_ID').getSelectionModel().deselectAll();
+            }
+        },
+        // NÚT 3 : GET SELECT DATA = "lấy dữ liệu đc TÍCH CHỌN"
+        {
+            text: 'GET SELECTED DATA',
+            handler: function(){
+                // lấy ELEMENT = "ID" : Ext.getCmp('ID') = Ext.getCmp('Extra_Grid_ID')
+                // getSelectionModel()  : chế độ CHỌN
+                    // getSelection()       : chọn "TẤT CẢ"
+                var rowSelected = Ext.getCmp('Extra_Grid_ID').getSelectionModel().getSelection();
+                console.log('EXTRA GRID - rowSelected = ', rowSelected);
             }
         }
     ]
