@@ -34,6 +34,7 @@ Ext.define('MyApp.view.main.ExtraGrid', {
         {text: 'Name', dataIndex:'name', flex: 1},
         {text: 'Email', dataIndex:'email', flex: 3},
         {text: 'Phone', dataIndex:'phone', flex: 2},
+        {text: 'Website', dataIndex:'website', flex: 2},
     ],
     
     // ID = duy nhất
