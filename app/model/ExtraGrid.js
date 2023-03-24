@@ -7,7 +7,8 @@ Ext.define('MyApp.model.ExtraGrid', {
 
     // khai báo CÁC TRƯỜNG DỮ LIỆU - KIỂU DỮ LIỆU
     fields: [
-        { name: 'name', type: 'int'},
+        { name: 'name', type: 'string'},
+        // { name: 'name', type: 'int'},    // TEST = "NAN"
         { email: 'email', type: 'string'},
         { phone: 'phone', type: 'string'}
     ]

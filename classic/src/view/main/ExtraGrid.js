@@ -29,5 +29,14 @@ Ext.define('MyApp.view.main.ExtraGrid', {
         {text: 'Name', dataIndex:'name', flex: 1},
         {text: 'Email', dataIndex:'email', flex: 3},
         {text: 'Phone', dataIndex:'phone', flex: 2},
-    ]
+    ],
+    
+    // ID
+    id: 'extraGridID',
+    selModel: {
+        injectCheckbox: 'first',
+        checkOnly: true,
+        model: 'SIMPLE',
+        type: 'checkboxmodel'
+    }
 })
