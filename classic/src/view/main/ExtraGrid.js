@@ -16,9 +16,14 @@ Ext.define('MyApp.view.main.ExtraGrid', {
             //     { nameMiss: 'Data',     email: "mr.data@enterprise.com",        phone: "555-444-4444" }
             // ],
     // 2.DỮ LIỆU - BẢNG (STORE ĐỘNG - LẤY TỪ STORE VỀ)
+            // store: {
+            //     // CYDB - khi IMPORT = lấy vào "KHÔNG CẦN TIỀN TỐ = store."
+            //     type: 'extraGrid'   // 'extraGrid' = viết tắt của 'store.extraGrid'
+            // },
+    // 3.DỮ LIỆU - BẢNG (STORE ĐỘNG : "call API => BACKEND trả về" => lưu vào STORE => đẩy vào VIEW )
     store: {
         // CYDB - khi IMPORT = lấy vào "KHÔNG CẦN TIỀN TỐ = store."
-        type: 'extraGrid'   // 'extraGrid' = viết tắt của 'store.extraGrid'
+        type: 'extraGridAPI'   // 'extraGridAPI' = viết tắt của 'store.extraGridAPI'
     },
     
     // CẤU HÌNH CỘT: "TEXT = TÊN CỘT" ; "DATAINDEX = TÊN BIẾN CỦA CỘT" ; "FLEX = CHIA ĐỘ RỘNG CỘT"

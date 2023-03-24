@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "tuantran-1",
+            "website": "tuantran-1.com",
+            "email": "tuantran-1@enterprise.com",
+            "phone": "0941111111"
+        },
+        {
+            "id": 2,
+            "name": "tuantran-2",
+            "website": "tuantran-2.com",
+            "email": "tuantran-2@enterprise.com",
+            "phone": "0942111111"
+        },
+        {
+            "id": 3,
+            "name": "tuantran-3",
+            "website": "tuantran-3.com",
+            "email": "tuantran-3@enterprise.com",
+            "phone": "0943111111"
+        }
+    ]
+}
