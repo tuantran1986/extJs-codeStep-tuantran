@@ -27,7 +27,10 @@ Ext.application({
     // mainView: 'MyApp.view.main.Extra',
 
     // MAINVIEW = "view chính" = "EXTRA GRID"
-    mainView: 'MyApp.view.main.ExtraGrid',
+    // mainView: 'MyApp.view.main.ExtraGrid',
+
+    // MAINVIEW = "view chính" = "EXTRA GRID"
+    mainView: 'MyApp.view.main.SearchForm',
 
     // 1. LUỒNG: APP - VIEW MAIN - MODEL MAIN
     // mainView: 'MyApp.view.main.Main',
