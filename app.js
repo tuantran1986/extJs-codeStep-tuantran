@@ -26,8 +26,11 @@ Ext.application({
     // The name of the initial view to create = MAINVIEW
     // mainView: 'MyApp.view.main.Extra',
 
+    // The name of the initial view to create = MAINVIEW
+    mainView: 'MyApp.view.main.ExtraPopUp',
+
     // MAINVIEW = "view chính" = "EXTRA GRID"
-    mainView: 'MyApp.view.main.ExtraGrid',
+    // mainView: 'MyApp.view.main.ExtraGrid',
 
     // MAINVIEW = "view chính" = "EXTRA GRID"
     // mainView: 'MyApp.view.main.SearchForm',
