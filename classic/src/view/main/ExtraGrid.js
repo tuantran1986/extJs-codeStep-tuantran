@@ -40,11 +40,14 @@ Ext.define('MyApp.view.main.ExtraGrid', {
                 //     // type: 'string',      
                 // },
             // 2.lọc theo "LIST OPTIONS"
+                // filter: {     
+                //     type: 'list',              
+                //     options: ['tuantran','thu', 'quocAnh']
+                // },
+            // 3.lọc theo "NUMBER"
                 filter: {     
-                    type: 'list',              
-                    options: ['tuantran','thu', 'quocAnh']
+                    type: 'number'
                 }
-                
         },
         // 
         {text: 'Email', dataIndex:'email', flex: 3},
