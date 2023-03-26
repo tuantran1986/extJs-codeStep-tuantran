@@ -26,6 +26,12 @@ Ext.define('MyApp.view.main.ExtraGrid', {
         type: 'extraGridAPI'   // 'extraGridAPI' = viết tắt của 'store.extraGridAPI'
     },
     
+    // PHÂN TRANG:
+    bbar: {
+        xtype: 'pagingtoolbar',
+        displayInfo: true,
+    },
+
     // CẤU HÌNH CỘT: "TEXT = TÊN CỘT" ; "DATAINDEX = TÊN BIẾN CỦA CỘT" ; "FLEX = CHIA ĐỘ RỘNG CỘT"
         // "flex: 1" ==> chia cột 1/6.
         // "flex: 3" ==> chia cột 3/6.
