@@ -31,12 +31,21 @@ Ext.define('MyApp.view.main.ExtraGrid', {
         // "flex: 3" ==> chia cột 3/6.
         // "flex: 2" ==> chia cột 2/6.
     columns: [
-        {text: 'Name', dataIndex:'name', flex: 1},
+        {
+            text: 'Name', dataIndex:'name', flex: 1,
+            // chức năng FILTER: 1 thêm "filter" - vào cột NAME
+            filter: {
+                type: 'string'
+            }
+        },
+        // 
         {text: 'Email', dataIndex:'email', flex: 3},
         {text: 'Phone', dataIndex:'phone', flex: 2},
         {text: 'Website', dataIndex:'website', flex: 2},
     ],
-    
+    // chức năng FILTER: 2 cấu hình PLUGINS
+    plugins: 'gridfilters',
+
     // ID = duy nhất
     id: 'Extra_Grid_ID',
     selModel: {
