@@ -4,6 +4,11 @@ Ext.define('MyApp.store.ExtraGridAPI', {
     // ALIAS = XTYPE = EXPORT: phải có TIỀN TỐ = "STORE."
     alias: 'store.extraGridAPI',    // khi gọi để dùng - chỉ cần "extraGridAPI"
 
+    // "STORE" - khai  báo chức năng "FILTER từ BACKEND"
+    itemId: 'extraGridAPI',
+    remoteFilter: true,             // khai báo "BACKEND FILTER" = FILTER REMOTE
+    storeId: 'extraGridAPI',
+
     proxy: {
         type: 'ajax',                       // call api = AJAX
         url: 'http://localhost:3000/users'  // URL = BACKEND

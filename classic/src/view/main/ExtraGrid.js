@@ -36,18 +36,18 @@ Ext.define('MyApp.view.main.ExtraGrid', {
             // chức năng FILTER: 1 thêm "filter" - vào cột NAME
 
             // 1.lọc theo "CHUỖI"
-                // filter: {
-                //     // type: 'string',      
-                // },
+                filter: {
+                    type: 'string',
+                },
             // 2.lọc theo "LIST OPTIONS"
                 // filter: {     
                 //     type: 'list',              
                 //     options: ['tuantran','thu', 'quocAnh']
                 // },
             // 3.lọc theo "NUMBER"
-                filter: {     
-                    type: 'number'
-                }
+                // filter: {     
+                //     type: 'number'
+                // }
         },
         // 
         {text: 'Email', dataIndex:'email', flex: 3},
